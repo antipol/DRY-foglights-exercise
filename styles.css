@@ -1,0 +1,267 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-image: url(https://source.unsplash.com/DN4wKpffIAI/1600x900);
+  background-attachment: fixed;
+  color: #083131;
+}
+
+.container {
+  position: relative;
+  margin: 0 auto;
+  width: 75%;
+  background-image: linear-gradient(
+    to right,
+    transparent 0%,
+    #cbd0812e 7% 93%,
+    transparent
+  );
+}
+
+/* to make triangle with "light",
+make div and give it class .triangle */
+.triangle {
+  position: fixed;
+  left: -200px;
+  top: -20px;
+  width: 0;
+  height: 0;
+  border-top: 100px solid transparent;
+  border-bottom: 100px solid transparent;
+  border-left: 1400px solid #fff946;
+  opacity: 0.6;
+  transition: 0.2s;
+  z-index: 1;
+}
+
+.triangle:hover {
+  opacity: 1;
+  border-left: 1400px solid #fff946;
+}
+
+header,
+section {
+  height: 900px;
+  padding-top: 130px;
+}
+
+ul {
+  position: fixed;
+  top: 60px;
+  left: 20px;
+  z-index: 1;
+}
+
+li {
+  display: inline-block;
+  font-size: 1.2em;
+  padding: 5px;
+  font-weight: bold;
+}
+
+li a {
+  color: #083131;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+li a:hover {
+  text-shadow: -3px 1px 2px #ab9425;
+}
+
+nav img {
+  position: fixed;
+  top: -80px;
+  right: -30px;
+  width: 450px;
+  z-index: 1;
+}
+
+/* centering each section */
+hgroup,
+section {
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* styling of home/first section and all headlines */
+h1 {
+  font-family: "Comfortaa", cursive;
+  color: transparent;
+  padding: 15%;
+  font-size: 3em;
+  text-shadow: -5px 4px 5px #3b7f80;
+  transition: 0.1s;
+}
+
+h1:hover {
+  /* color: #083131; */
+  text-shadow: -5px 4px #083131;
+  transition: 0.2s;
+}
+
+span {
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+h3 {
+  text-align: right;
+  font-weight: normal;
+  letter-spacing: 0.1em;
+}
+
+h2 {
+  padding: 3%;
+  font-size: 1.8em;
+  letter-spacing: 0.1em;
+  word-spacing: 0.5em;
+}
+
+/* styling of product info and video */
+iframe {
+  margin: 5%;
+  box-shadow: -6px 6px 15px 2px #083131;
+}
+
+/* making testimonials flex */
+.cust-experience {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+/* styling of the customer testimonials */
+figure {
+  position: relative;
+  height: 300px;
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #ceead7;
+  box-shadow: -3px 3px 6px #083131;
+  opacity: 0.5;
+  transition: 0.2s;
+  border-radius: 8px;
+}
+
+figure:hover {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+figcaption,
+figure img {
+  width: 230px;
+}
+
+figure img {
+  height: 150px;
+}
+
+figcaption {
+  padding: 20px 5px;
+}
+
+figure::after {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 0.8em;
+  font-style: italic;
+}
+
+figure:first-child::after {
+  content: "Martha Jones";
+}
+
+figure:nth-child(2)::after {
+  content: "Jonathan Woods";
+}
+
+figure:last-child::after {
+  content: "Dave and crew";
+}
+
+/* styling of morse code section */
+.flex-morse {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.letters,
+.numbers {
+  display: flex;
+  flex-flow: column wrap;
+  height: 400px;
+  align-content: flex-start;
+}
+
+.letter-box,
+.number-box {
+  text-align: left;
+  padding: 10px 25px;
+}
+
+#morse p {
+  color: purple;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: right;
+  margin-left: 10px;
+}
+
+h4,
+#morse p {
+  display: inline-block;
+}
+
+/* styling of the contact form */
+#contact p {
+  padding-bottom: 30px;
+}
+
+fieldset {
+  position: relative;
+  padding: 2%;
+  width: 60%;
+  margin: 0 auto;
+  text-align: left;
+  box-shadow: -5px 5px 10px #083131;
+}
+
+input,
+textarea {
+  background-color: #08313121;
+}
+
+input:not([type="submit"]) {
+  margin-bottom: 4%;
+  padding: 1%;
+  width: 50%;
+}
+
+textarea {
+  display: block;
+  margin-top: 2%;
+  width: 100%;
+  height: 150px;
+}
+
+input[type="submit"] {
+  margin: 3% 0 0 83%;
+  padding: 1% 2%;
+  border-radius: 5px;
+  background-image: linear-gradient(white, #7fb5b0, #88a4b5, #20382e);
+}
+
+fieldset label {
+  padding-right: 20px;
+}
